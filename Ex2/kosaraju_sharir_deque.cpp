@@ -1,4 +1,4 @@
-#include "kosaraju_sharir.hpp"
+#include "kosaraju-sharir.hpp"
 #include <iostream>
 #include <algorithm>
 
