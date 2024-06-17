@@ -1,6 +1,6 @@
 # Define the compiler and compiler flags
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Wextra
+CXXFLAGS = -std=c++11 -Wall -Wextra -pg
 
 # Define the target executable
 TARGET = scc_finder
@@ -24,7 +24,7 @@ $(TARGET): $(OBJS)
 
 # Rule to clean up the build artifacts
 clean:
-	rm -f $(TARGET) $(OBJS)
+	rm -f $(TARGET) $(OBJS) gmon.out
 
 # Rule to run the program with input redirection from input.txt
 run: $(TARGET)
